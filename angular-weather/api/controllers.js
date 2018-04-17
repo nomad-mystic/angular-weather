@@ -1,6 +1,7 @@
 const http = require('http');
-const config = require('./config');
+const fs = require('fs');
 
+const config = require('./config');
 const controllers = {};
 
 
@@ -63,5 +64,11 @@ http.get(endpoint, (res) => {
     });
   });
 };
+
+
+controllers.getStates = () => {
+
+};
+
 
 module.exports = controllers;

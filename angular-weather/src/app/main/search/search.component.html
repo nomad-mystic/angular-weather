@@ -1,9 +1,52 @@
 <section>
   <div class="card">
-    <div class="card-body">
-      <div class="search">
-        <h2>Search Weather by City Here.</h2>
-      </div>
+    <div class="card-body search">
+        <section>
+          <div class="row header">
+            <div class="col-12">
+              <h2>Search Weather by City Here.</h2>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row city">
+            <div class="col-12">
+              <div class="md-form form-lg">
+                <input
+                  type="text"
+                  class="form-control" name="city" id="city" aria-describedby="cityHelp">
+                <small id="cityHelp" class="form-text text-muted">Help text</small>
+                <label for="city">City</label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="row state">
+            <div class="col-12">
+              <div class="md-form form-lg">
+                <input list="browsers" id="myBrowser" name="myBrowser" class="form-control" />
+                <datalist id="browsers">
+                  <option value="Chrome">
+                  <option value="Firefox">
+                  <option value="Internet Explorer">
+                  <option value="Opera">
+                  <option value="Safari">
+                  <option value="Microsoft Edge">
+                </datalist>
+                <label for="myBrowser">Choose a browser from this list:</label>
+              </div>
+            </div>
+          </div>
+          <div class="row searchButtons">
+            <div class="col-12 col-md-6">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+            <div class="col-12 col-md-6">
+              <button type="button" class="btn btn-danger">Cancel</button>
+            </div>
+          </div>
+        </section>
     </div>
   </div>
 </section>
