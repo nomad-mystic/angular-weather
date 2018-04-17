@@ -19,10 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/mdbootstrap/css/bootstrap.css",
+        "../node_modules/mdbootstrap/css/mdb.css",
         "styles.scss"
       ],
       "stylePreprocessorOptions": {
-        "includePaths": []
+        "includePaths": [
+
+        ]
       },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
