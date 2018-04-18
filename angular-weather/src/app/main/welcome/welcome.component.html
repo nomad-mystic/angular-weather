@@ -1,8 +1,23 @@
 <section>
-  <div class="card">
+  <div class="card mt-5">
     <div class="card-body">
       <div class="welcome">
-        <h2>Welcome to the Angular Weather Finder.</h2>
+        <div class="row">
+          <div class="col-12">
+            <h2>Welcome to the Angular Weather Finder.</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button
+              type="button"
+              class="btn btn-default btn-lg btn-block"
+              routerLinkActive="active"
+              [routerLink]="['/weather-view']">
+              Find Your Cities Weather
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

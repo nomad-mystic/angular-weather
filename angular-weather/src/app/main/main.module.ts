@@ -5,6 +5,8 @@ import { WeatherGraphComponent } from './weather-view/weather-graph/weather-grap
 import { WeatherDetailsComponent } from './weather-view/weather-details/weather-details.component';
 import { WeatherService } from './weather-view/weather.service';
 import { CommonModule } from '@angular/common';
+import { WeatherViewComponent } from './weather-view/weather-view.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,15 +15,18 @@ import { CommonModule } from '@angular/common';
     SearchComponent,
     WeatherGraphComponent,
     WeatherDetailsComponent,
+    WeatherViewComponent,
   ],
   imports: [
     CommonModule,
+    RouterModule,
   ],
   exports: [
     WelcomeComponent,
     SearchComponent,
-    WeatherGraphComponent,
-    WeatherDetailsComponent,
+    WeatherViewComponent,
+    // WeatherGraphComponent,
+    // WeatherDetailsComponent,
   ],
   providers: [
     WeatherService,
