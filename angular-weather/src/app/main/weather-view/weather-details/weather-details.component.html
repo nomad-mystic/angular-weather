@@ -1,0 +1,22 @@
+<section>
+  <div class="details">
+    <!--<div class="legend" [innerHTML]="legendHTML"></div>-->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-md-2 mx-auto" *ngFor="let details of weatherDetails; let i =index">
+            <div class="individualDetails">
+              <p>{{ details.pop }}%</p>
+              <p>{{ details.qpf }}''</p>
+              <p>{{ details.weekdayShort }}</p>
+              <img [src]="details.iconURL"
+                   class="img-thumbnail"
+                   alt="">
+              <p>{{ details.highTempt }}&deg; | {{ details.lowTempt }}&deg;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

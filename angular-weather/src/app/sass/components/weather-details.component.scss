@@ -1,0 +1,17 @@
+.details {
+  .card {
+    background: $grey-darken-4;
+  }
+  .individualDetails {
+
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 0 auto;
+      color: white;
+    }
+    img {
+      margin: 0 auto;
+    }
+  }
+}

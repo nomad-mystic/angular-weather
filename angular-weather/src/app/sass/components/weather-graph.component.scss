@@ -1,0 +1,10 @@
+.weather-graph {
+  //height: 5vh;
+  .graph {
+    position: relative;
+    margin: auto;
+    canvas {
+      border: solid black 1px;
+    }
+  }
+}
